@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Dialog Box</title>
+<link rel="stylesheet" href="./css/style.css" />
+
+</head>
+<body>
+    <div class="container">
+     <img src="./images/course.png"  class="img-header"  alt="Food" />
+     <div>
+      
+        <img src="./images/qr-code.png" class="img-qr" alt="QR Code" />
+        <p class="qr-description">
+         Scan The QR Code 
+        </p>
+     </div>
+     </div>
+
+  <button type="button" onclick="openModal()" class="btn">
+    Enroll now
+  </button>
+
+  <div class="overlay" id="overlay">
+    <div class="modal"
+    >
+        <img src="./images/close.png" class="close-icon" alt="Close" onclick="closeModal()" />
+
+        <form class="form">
+            <h1 class="form-header">Details</h1>
+          <input type="text" placeholder="Full Name" class="form-input">
+          <input type="text" placeholder="Enter course" class="form-input">
+          <input type="text" placeholder="Enter Your Phone Number" class="form-input">
+          <input type="text" placeholder="Enter Your Address" class="form-input">
+        </form>
+
+        <div>
+            <button type="button" class="btn">
+              Proceed To Pay
+            </button>
+        </div>
+    </div> 
+
+
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+</html>
